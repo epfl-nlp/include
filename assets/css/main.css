@@ -2070,6 +2070,43 @@ input, select, textarea {
 		padding: 6em 0 6em 0;
 	}
 
+	/* Features 2 specific styling */
+	.wrapper.features-2 {
+		background-image: url("../../images/bg_languages.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		color: #000;
+	}
+
+	.wrapper.features-2 .container {
+		background: rgba(255, 255, 255, 0.85);
+		border: solid 1px rgba(0, 0, 0, 0.15);
+		border-radius: 0.5em;
+		padding: 2em;
+	}
+
+	.wrapper.features-2 .major h2 {
+		color: #000;
+		font-weight: 600;
+	}
+
+	.wrapper.features-2 .feature header h2 {
+		color: #000;
+		font-weight: 600;
+	}
+
+	.wrapper.features-2 .feature p {
+		color: #000;
+	}
+
+	.wrapper.features-2 .image.featured {
+		background: rgba(255, 255, 255, 0.9);
+		padding: 1em;
+		border-radius: 0.35em;
+		border: solid 1px rgba(0, 0, 0, 0.15);
+	}
+
 	.image-wrapper {
 		position: relative;
 	}
@@ -2089,31 +2126,26 @@ input, select, textarea {
 			top: 0;
 			z-index: 1;
 			box-shadow: inset 0px 0px 0px 1px #e8e8e8;
-			background: #f6f8fb url("images/image-wrapper.svg");
+			background: #f6f8fb url("../../images/bg_languages.png");
 		}
 
 	#header-wrapper {
 		position: relative;
 		padding: 4em 0 2em 0;
-		background-image: url("images/header.svg");
-		background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-color: #f08c89;
-		background-size: 100% 620%;
-		background-size: 128px 128px, 100% 620%, auto;
-		background-repeat: repeat, no-repeat, no-repeat;
+		background-image: url("../../images/bg_include_light.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	.homepage #header-wrapper {
 		padding: 10em 0 6em 0;
-		background-size: 128px 128px, 100% 100%, auto;
+		background-size: cover;
 	}
 
 	#promo-wrapper {
 		position: relative;
-		background-image: url("images/overlay.png"), url("../../images/promo.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg_include.png");
 		background-size: 192px 192px, cover;
 		background-position: top left, center center;
 		color: #fff;
@@ -2277,14 +2309,15 @@ input, select, textarea {
 
 	#hero {
 		position: relative;
-		color: #fff;
+		color: #000;
 		text-align: center;
 		z-index: 1;
 	}
 
 		#hero h2 {
-			color: #fff;
+			color: #000;
 			font-size: 3em;
+			font-weight: 900;
 		}
 
 		#hero strong {
@@ -2292,42 +2325,43 @@ input, select, textarea {
 		}
 
 		#hero header > span {
-			color: #fff;
+			color: #000;
 		}
 
 		#hero p {
 			font-size: 1.5em;
 			line-height: 1.5em;
+			font-weight: 900;
 		}
 
 		#hero .button {
 			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
-			color: #f08c89;
+			border-color: rgba(0, 0, 0, 0.5);
+			color: #000;
 			font-size: 1.25em;
 		}
 
 			#hero .button:hover {
-				border-color: rgba(255, 255, 255, 0.75);
+				border-color: rgba(0, 0, 0, 0.75);
 				background-color: rgba(255, 255, 255, 0.15);
-				color: #fff;
+				color: #000;
 			}
 
 		#hero a {
-			color: #fff;
-			border-color: #fff;
-			border-color: rgba(255, 255, 255, 0.5);
+			color: #000;
+			border-color: #000;
+			border-color: rgba(0, 0, 0, 0.5);
 		}
 
 			#hero a:hover {
-				border-color: rgba(255, 255, 255, 0);
+				border-color: rgba(0, 0, 0, 0);
 			}
 
 /* Promo */
 
 	#promo {
-		background: rgba(255, 255, 255, 0.05);
-		border: solid 1px rgba(255, 255, 255, 0.25);
+		background: rgba(255, 255, 255, 0.85);
+		border: solid 1px rgba(0, 0, 0, 0.15);
 		border-radius: 0.5em;
 		padding: 1.75em 2.5em 1.75em 2.5em;
 		display: inline-block;
@@ -2336,23 +2370,25 @@ input, select, textarea {
 	}
 
 		#promo h2 {
-			color: #fff;
+			color: #000;
 			display: inline-block;
 			margin-right: 1em;
 			font-size: 1.75em;
+			font-weight: 500;
 		}
 
 		#promo .button {
 			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
-			color: #27636B;
+			border-color: rgba(0, 0, 0, 0.5);
+			color: #000;
 			font-size: 1.25em;
+			font-weight: 500;
 		}
 
 			#promo .button:hover {
-				border-color: rgba(255, 255, 255, 0.75);
-				background-color: rgba(255, 255, 255, 0.15);
-				color: #fff;
+				border-color: rgba(0, 0, 0, 0.75);
+				background-color: rgba(255, 255, 255, 0.95);
+				color: #000;
 			}
 
 /* Main */
@@ -3067,4 +3103,56 @@ input, select, textarea {
 				margin-bottom: 1em;
 			}
 
+	}
+
+/* Exam Examples */
+
+	.exam-example {
+		text-align: center;
+		padding: 2em 1em;
+		background: #fff;
+		border: solid 2px rgba(0, 0, 0, 0.1);
+		border-radius: 1em;
+		margin: 0;
+		transition: all 0.3s ease-in-out;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		min-height: 220px;
+		width: 100%;
+	}
+
+	/* .exam-example:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+		border-color: rgba(0, 0, 0, 0.2);
+	} */
+
+	.exam-example .emoji {
+		font-size: 4em;
+		margin-bottom: 0.5em;
+		line-height: 1;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		padding-top: 0em;
+	}
+
+	.exam-example p {
+		color: #52575c;
+		font-size: 1em;
+		line-height: 1.5em;
+		margin: 0;
+		max-width: 100%;
+		padding: 0 0.2em;
+		flex-shrink: 0;
+	}
+
+	.wrapper.exam-examples {
+		background: #fff;
+		background-image: none;
 	}
