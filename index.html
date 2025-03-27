@@ -19,8 +19,12 @@
 					<div id="header" class="container">
 						<!-- Language Selector -->
 						<div class="language-selector">
-							<button onclick="changeLanguage('en')" class="lang-btn">EN</button>
-							<button onclick="changeLanguage('es')" class="lang-btn">ES</button>
+							<select id="language-select" onchange="changeLanguage(this.value)">
+								<option value="en">English</option>
+								<option value="es">Español</option>
+								<option value="fr">Français</option>
+								<option value="pt">Português</option>
+							</select>
 						</div>
 						
 						<!-- Logo 

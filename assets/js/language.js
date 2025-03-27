@@ -5,13 +5,7 @@ let currentLanguage = localStorage.getItem('language') || 'en';
 function changeLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
-    
-    // Update active button state
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
-    document.querySelector(`.lang-btn[onclick*="${lang}"]`).classList.add('active');
-    
+    document.getElementById('language-select').value = lang;
     updateContent();
 }
 
@@ -21,12 +15,10 @@ function updateContent() {
     document.querySelector('#hero h2').textContent = translations[currentLanguage].title;
     document.querySelector('#hero p').textContent = translations[currentLanguage].subtitle;
     
-    // Update ALL share exam buttons
+    // Update main buttons
     document.querySelectorAll('a.button').forEach(button => {
-        if (button.textContent.toLowerCase().includes('share') || 
-            button.textContent.toLowerCase().includes('comparte')) {
-            button.textContent = translations[currentLanguage].shareExam;
-        }
+        // Update all share exam buttons regardless of current text
+        button.textContent = translations[currentLanguage].shareExam;
     });
 
     // Update main description
@@ -47,13 +39,11 @@ function updateContent() {
     features[2].querySelector('h2').textContent = translations[currentLanguage].collectData;
     features[2].querySelector('p').textContent = translations[currentLanguage].collectDataDesc;
 
-    // Update ALL "How to find exams" sections
-    document.querySelectorAll('.major h2').forEach(header => {
-        if (header.textContent.toLowerCase().includes('how to find') || 
-            header.textContent.toLowerCase().includes('cómo encontrar')) {
-            header.textContent = translations[currentLanguage].howToFind;
-        }
-    });
+    // Update "How to find exams" section - Fixed selector
+    const examSectionHeader = document.querySelector('.wrapper:not(.features-2) .container .major h2');
+    if (examSectionHeader) {
+        examSectionHeader.textContent = translations[currentLanguage].howToFind;
+    }
     
     // Update exam types
     const examTypes = document.querySelectorAll('.exam-example p');
@@ -86,7 +76,7 @@ function updateContent() {
     document.querySelector('.menu li:last-child').firstChild.textContent = `${translations[currentLanguage].designBy} `;
 }
 
-// Add some styling for the language selector buttons
+// Add styling for the language selector dropdown
 const style = document.createElement('style');
 style.textContent = `
     .language-selector {
@@ -95,31 +85,40 @@ style.textContent = `
         right: 20px;
         z-index: 1000;
     }
-    .lang-btn {
-        background: rgba(255, 255, 255, 0.1);
-        border: 2px solid #fff;
-        color: #fff;
-        padding: 8px 15px;
-        margin: 0 5px;
+    #language-select {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #000;
+        color: #000;
+        padding: 8px 30px 8px 15px;
         cursor: pointer;
         border-radius: 4px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        background-size: 16px;
+        min-width: 140px;
         transition: all 0.3s ease;
-        font-weight: bold;
     }
-    .lang-btn:hover {
+    #language-select:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    #language-select:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+    #language-select option {
         background: #fff;
         color: #000;
-    }
-    .lang-btn.active {
-        background: #fff;
-        color: #000;
+        padding: 8px;
     }
 `;
 document.head.appendChild(style);
 
-// Initialize the content and active button state when the page loads
+// Initialize the content and select the correct language when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // Set initial active button
-    document.querySelector(`.lang-btn[onclick*="${currentLanguage}"]`).classList.add('active');
+    document.getElementById('language-select').value = currentLanguage;
     updateContent();
 }); 

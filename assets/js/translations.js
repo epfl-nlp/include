@@ -28,7 +28,7 @@ const translations = {
             email: "Email",
             languages: "Languages",
             message: "Message (optional)",
-            send: "Send Message",
+            send: "Send message",
             clear: "Clear form"
         },
         fundedBy: "Funded by:",
@@ -43,9 +43,9 @@ const translations = {
         howCollaborate: "Cómo puedes colaborar",
         participate: "Participa",
         participateDesc: "Muestra tu interés enviándonos tu nombre y los idiomas en los que te sientes cómodo leyendo.",
-        findExams: "Encuentra Exámenes",
+        findExams: "Encuentra exámenes",
         findExamsDesc: "¡Busca exámenes escolares, prácticos o profesionales - en línea, en libros de texto o en cualquier otro lugar!",
-        collectData: "Recopila Datos",
+        collectData: "Recopila datos",
         collectDataDesc: "Con nuestra ayuda, recopila las preguntas y respuestas de los exámenes en un formato claro y estructurado.",
         howToFind: "Cómo encontrar exámenes",
         examTypes: {
@@ -64,11 +64,83 @@ const translations = {
             email: "Correo electrónico",
             languages: "Idiomas",
             message: "Mensaje (opcional)",
-            send: "Enviar Mensaje",
+            send: "Enviar mensaje",
             clear: "Limpiar formulario"
         },
         fundedBy: "Financiado por:",
         rights: "Todos los derechos reservados.",
         designBy: "Diseño basado en"
+    },
+    fr: {
+        title: "Le Projet INCLUDE",
+        subtitle: "Aidez-nous à faire parler l'IA plus de langues !",
+        shareExam: "Partagez un examen !",
+        mainDescription: "INCLUDE est une initiative académique pour faire parler l'IA plus de langues et représenter plus de régions et de cultures.\n\nPour y parvenir, nous collectons des examens et des questionnaires en différentes langues.\n\nNotre objectif est d'utiliser ces ressources pour rendre les systèmes d'IA plus inclusifs.",
+        howCollaborate: "Comment collaborer",
+        participate: "Participer",
+        participateDesc: "Manifestez votre intérêt en nous envoyant votre nom et les langues que vous vous sentez à l'aise de lire.",
+        findExams: "Trouver des examens",
+        findExamsDesc: "Recherchez des examens scolaires, pratiques ou professionnels - en ligne, dans des manuels ou ailleurs !",
+        collectData: "Collecter des données",
+        collectDataDesc: "Avec notre aide, collectez les questions et réponses des examens dans un format clair et structuré.",
+        howToFind: "Comment trouver des examens",
+        examTypes: {
+            university: "Examens universitaires (y compris les concours d'entrée)",
+            school: "Examens scolaires",
+            textbook: "Tests d'auto-évaluation dans les manuels",
+            language: "Tests de langue",
+            driving: "Examens de conduite et permis maritimes",
+            professional: "Examens de certification professionnelle (médecine, droit, etc.)",
+            trivia: "Jeux de type quiz"
+        },
+        helpUs: "Aidez-nous à faire parler l'IA votre langue",
+        joinTeam: "Rejoignez l'équipe !",
+        formPlaceholders: {
+            name: "Nom",
+            email: "Email",
+            languages: "Langues",
+            message: "Message (optionnel)",
+            send: "Envoyer le message",
+            clear: "Effacer le formulaire"
+        },
+        fundedBy: "Financé par :",
+        rights: "Tous droits réservés.",
+        designBy: "Design basé sur"
+    },
+    pt: {
+        title: "O Projeto INCLUDE",
+        subtitle: "Ajude-nos a fazer a IA falar mais idiomas!",
+        shareExam: "Compartilhe uma prova!",
+        mainDescription: "INCLUDE é uma iniciativa acadêmica para fazer a IA falar mais idiomas e representar mais regiões e culturas.\n\nPara isso acontecer, coletamos provas e questionários em vários idiomas.\n\nNosso objetivo é usar esses recursos para tornar os sistemas de IA mais inclusivos.",
+        howCollaborate: "Como colaborar",
+        participate: "Participe",
+        participateDesc: "Demonstre seu interesse enviando-nos seu nome e os idiomas em que você se sente confortável para ler.",
+        findExams: "Encontre provas",
+        findExamsDesc: "Procure provas escolares, práticas ou profissionais - online, em livros didáticos ou em qualquer outro lugar!",
+        collectData: "Colete dados",
+        collectDataDesc: "Com nossa ajuda, colete as perguntas e respostas das provas em um formato claro e estruturado.",
+        howToFind: "Como encontrar provas",
+        examTypes: {
+            university: "Provas universitárias (incluindo vestibulares)",
+            school: "Provas escolares",
+            textbook: "Testes de autoavaliação em livros didáticos",
+            language: "Testes de idiomas",
+            driving: "Provas de habilitação e licenças marítimas",
+            professional: "Exames de certificação profissional (medicina, direito, etc.)",
+            trivia: "Jogos de perguntas e respostas"
+        },
+        helpUs: "Ajude-nos a fazer a IA falar seu idioma",
+        joinTeam: "Junte-se à equipe!",
+        formPlaceholders: {
+            name: "Nome",
+            email: "Email",
+            languages: "Idiomas",
+            message: "Mensagem (opcional)",
+            send: "Enviar mensagem",
+            clear: "Limpar formulário"
+        },
+        fundedBy: "Financiado por:",
+        rights: "Todos os direitos reservados.",
+        designBy: "Design baseado em"
     }
 }; 
